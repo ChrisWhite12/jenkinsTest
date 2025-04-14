@@ -12,8 +12,8 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                python3 --version
                 cd myapp
+                echo "Building myapp.."
                 pip install -r requirements.txt
                 '''
             }
